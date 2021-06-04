@@ -4,6 +4,8 @@ Creating mesmerizing brain animations by playing with geodesic distances.
 <img src="/visuals/movie-okapi_white.gif"/>
 
 ## Dependencies
+This project is developed using [Debian 10](https://www.debian.org/intro/philosophy) operating systems.
+
 | Package                                                  | Tested version  |
 |----------------------------------------------------------|-----------------|
 | [Python](https://www.python.org/)                        | 3.7.6           |

@@ -6,15 +6,15 @@ import pyvista as pv
 import nibabel as nb
 
 FILES = [
-    "/home/faruk/Documents/temp_flooding_brains/data/okapi/okapi_cerebrum_RH_v05_borders_inputrim_centroids1_geodistance.nii.gz",
-    "/home/faruk/Documents/temp_flooding_brains/data/okapi/okapi_cerebrum_RH_v05_borders_inputrim_centroids4_geodistance.nii.gz",
-    "/home/faruk/Documents/temp_flooding_brains/data/okapi/okapi_cerebrum_RH_v05_borders_inputrim_centroids16_geodistance.nii.gz",
+    "/path/to/points-1_geodistance.nii.gz",
+    "/path/to/points-4_geodistance.nii.gz",
+    "/path/to/points-16_geodistance.nii.gz",
     ]
 
 OUTDIRS = [
-    "/home/faruk/Documents/temp_flooding_brains/frames/movie-okapi_flag_shot-1",
-    "/home/faruk/Documents/temp_flooding_brains/frames/movie-okapi_flag_shot-2",
-    "/home/faruk/Documents/temp_flooding_brains/frames/movie-okapi_flag_shot-3",
+    "/path/to/movies/shot-1",
+    "/path/to/movies/shot-2",
+    "/path/to/movies/shot-3",
     ]
 
 

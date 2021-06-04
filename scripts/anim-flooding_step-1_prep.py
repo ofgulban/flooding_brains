@@ -4,7 +4,7 @@ import numpy as np
 import pyvista as pv
 import nibabel as nb
 
-FILE1 = "/home/faruk/Documents/temp_flooding_brains/okapi/okapi_cerebrum_RH_v05_points1_geodistance.nii.gz"
+FILE1 = "/path/to/myimage_geodistance.nii.gz"
 
 NR_FRAMES = 240
 
