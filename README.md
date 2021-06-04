@@ -1,7 +1,7 @@
 # Flooding_brains
 Creating mesmerizing brain animations by playing with geodesic distances.
 
-<img src="/visuals/movie-okapi_white.gif"/>
+<img src="/visuals/movie-okapi_white_crop.gif"/>
 
 ## Dependencies
 This project is developed using [Debian 10](https://www.debian.org/intro/philosophy) operating system.
