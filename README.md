@@ -23,8 +23,8 @@ TODO: Clarify more.
 1. Get borders from a segmented image using `LN2_BORDERIZE`.
 2. Get points on borders using `LN2_COLUMNS`.
 3. Get geodesic distances from the points on the borders using `LN2_GEODISTANCE`.
-4. Use `scripts/step-1_select_camera_angle.py` to find a nice viewing angle.
-5. Use `scripts/step-2_render.py` for generating animation frames (png).
+4. Use `scripts/anim-flooding_step-1_prep.py` to find a nice viewing angle.
+5. Use `scripts/anim-flooding_step-2_render.py` for generating animation frames (png).
 6. Use `ffmpeg` script to convert the frames into movies (mp4).
 
 # Support
