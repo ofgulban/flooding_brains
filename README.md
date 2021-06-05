@@ -19,12 +19,16 @@ This project is developed using [Debian 10](https://www.debian.org/intro/philoso
 Flooding brains project is just a script compilation for now. Therefore make sure to install each dependency to be able run the scripts.
 
 ## Guide
-TODO: Clarify more.
-1. Get borders from a segmented image using `LN2_BORDERIZE`.
-2. Get points on borders using `LN2_COLUMNS`.
-3. Get geodesic distances from the points on the borders using `LN2_GEODISTANCE`.
+### Prepare inputs for animation
+1. Get borders from a segmentation file by running `prep-flooding_step-01_borders.py`.
+2. Get points on the borders by running: `prep-flooding_step-02_points.py`.
+3. Get geodesic distances from the points on the borders by running: `prep-flooding_step-03_points.py`
+
+### Create animation frames
 4. Use `scripts/anim-flooding_step-1_prep.py` to find a nice viewing angle.
 5. Use `scripts/anim-flooding_step-2_render.py` for generating animation frames (png).
+
+### Compile frames into a movie
 6. Use `ffmpeg` script to convert the frames into movies (mp4).
 
 # Support
