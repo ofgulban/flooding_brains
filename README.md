@@ -22,7 +22,7 @@ Flooding brains project is just a script compilation for now. Therefore make sur
 ### Prepare inputs for animation
 1. Get borders from a segmentation file by running `prep-flooding_step-01_borders.py`.
 2. Get points on the borders by running: `prep-flooding_step-02_points.py`.
-3. Get geodesic distances from the points on the borders by running: `prep-flooding_step-03_points.py`
+3. Get geodesic distances from the points on the borders by running: `prep-flooding_step-03_distances.py`
 
 ### Create animation frames
 4. Use `scripts/anim-flooding_step-1_prep.py` to find a nice viewing angle.

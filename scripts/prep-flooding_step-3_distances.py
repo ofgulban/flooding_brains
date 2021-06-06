@@ -6,18 +6,17 @@ import subprocess
 # Path to LayNii (folder where it is installed in your system)
 LAYNII_PATH = "/home/faruk/Git/LAYNII"
 
-# Segmentation nifti (tissues are labeled with integers)
-FILE = "/path/to/okapi_cerebrum_RH_v06.nii.gz"
+FILE1 = "path/to/okapi_cerebrum_RH_v06_borders.nii.gz"
+FILE2 = "path/to/okapi_cerebrum_RH_v06_borders_points4.nii.gz"
 
-# Voxels labelled with this integer will be considered
-TISSUE_LABEL = 1
+# Number of points that will be generated on the borders
+NR_POINTS = 4
 
 # -----------------------------------------------------------------------------
 # Run LayNii
-command = os.path.join(LAYNII_PATH, "LN2_BORDERIZE ")
-command += "-input {} ".format(FILE)
-command += "-label {} ".format(TISSUE_LABEL)
-command += "-jumps 3 "
+command = os.path.join(LAYNII_PATH, "LN2_GEODISTANCE ")
+command += "-domain {} ".format(FILE1)
+command += "-init {} ".format(FILE2)
 print(command)
 subprocess.run(command, shell=True)
 
