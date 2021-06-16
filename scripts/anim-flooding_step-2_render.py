@@ -6,15 +6,11 @@ import pyvista as pv
 import nibabel as nb
 
 FILES = [
-    "/path/to/points-1_geodistance.nii.gz",
-    "/path/to/points-4_geodistance.nii.gz",
-    "/path/to/points-16_geodistance.nii.gz",
+    "/path/to/okapi_cerebrum_RH_v06_borders_points4_geodistance.nii.gz",
     ]
 
 OUTDIRS = [
-    "/path/to/movies/shot-1",
-    "/path/to/movies/shot-2",
-    "/path/to/movies/shot-3",
+    "/path/to/movie",
     ]
 
 
