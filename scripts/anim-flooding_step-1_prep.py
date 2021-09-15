@@ -4,7 +4,7 @@ import numpy as np
 import pyvista as pv
 import nibabel as nb
 
-FILE1 = "/path/to/giraffe_N4_cerebrum_RH_v14_borders_points4_geodistance.nii.gz"
+FILE1 = "/home/faruk/gdrive/temp_flooding_brains/data/dolphin/dolphin_cerebrum_RH_15_borders_points16_geodistance_onebyone.nii.gz"
 
 CAMPOS = [[-518, 181, -177], [149, 184, 122], [0, 0, -1]]
 
@@ -21,10 +21,11 @@ opacity[0] = 0  # make zeros invisible
 
 # Get data and clip it
 data = nii.get_fdata()
+data[data != 0] -= np.min(data[data != 0])
 data[data == 0] = -1
 
 p = pv.Plotter(window_size=RESOLUTION, off_screen=False)
-p.set_background("white")
+p.set_background("black")
 p.camera_position = CAMPOS
 p.add_volume(data, cmap=CMAP, show_scalar_bar=False,
              shade=False, opacity=opacity, blending="composite")

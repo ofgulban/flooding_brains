@@ -7,7 +7,7 @@ import subprocess
 LAYNII_PATH = "/home/faruk/Git/LAYNII"
 
 # Segmentation nifti (tissues are labeled with integers)
-FILE = "/path/to/okapi_cerebrum_RH_v06.nii.gz"
+FILE = "/home/faruk/gdrive/temp_flooding_brains/data/dolphin/dolphin_cerebrum_RH_15.nii.gz"
 
 # Voxels labelled with this integer will be considered
 TISSUE_LABEL = 1
